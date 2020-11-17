@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import DiscoutCoupon from './components/discount-coupon/discount-coupon.jsx';
+import Test from './components/test/test.jsx';
+import EmailNewsletter from './components/email-newsletter/email-newsletter.jsx';
+import Footer from './components/footer/footer.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <DiscoutCoupon />
+      <Test />
+      <EmailNewsletter />
+      <Footer />
+    </>
   );
 }
 
