@@ -1,0 +1,29 @@
+.footer__wrapper {
+  padding: 20px;
+}
+
+.footer__action-dates-text {
+  @include reset-text;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer__action-dates {
+  color: $red;
+}
+
+.footer__action-terms {
+  @include reset-text;
+  font-size: 10px;
+  font-family: 'DIN Condensed';
+  font-weight: 700;
+  text-align: center;
+}
+
+.footer__action-terms-title {
+  @include reset-text;
+}
+
+.footer__action-terms-text {
+  @include reset-text;
+}

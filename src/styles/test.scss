@@ -1,0 +1,46 @@
+.test {
+  color: $white;
+}
+
+.test__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
+}
+
+.test__title {
+  @include reset-text;
+  width: 210px;
+  text-align: left;
+  font-size: 50px;
+  font-family: 'Marker Felt-Wide';
+  text-shadow: 1px 2px 0 #421d4b;
+
+  @media (min-width: $desktop) {
+    width: 339px;
+    font-size: 72px;
+  }
+}
+
+.test__text-wrapper {
+  @media (min-width: $desktop) {
+    margin-right: 41px;
+  }
+}
+
+.test__text {
+  @include reset-text;
+  width: 210px;
+  text-align: left;
+  font-size: 14px;
+
+  @media (min-width: $desktop) {
+    width: 339px;
+    font-size: 24px;
+  }
+}

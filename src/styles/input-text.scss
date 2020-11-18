@@ -1,0 +1,11 @@
+.input-text {
+  padding: 9px;
+  background-color: transparent;
+  border: 1px solid $white;
+  color: $white;
+
+  &::placeholder {
+    color: $white;
+    font-family: 'DIN Condensed';
+  }
+}

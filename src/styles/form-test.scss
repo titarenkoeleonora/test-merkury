@@ -1,0 +1,49 @@
+.form-test {
+  flex-grow: 1;
+  padding: 20px 20px;
+  background-color: $green;
+}
+
+.form-test__question {
+  @include reset-text;
+  font-size: 16px;
+
+  @media (min-width: $desktop) {
+    font-size: 36px;
+  }
+}
+
+.form-test__answers-list {
+  @include reset-list;
+  font-size: 10px;
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+  }
+}
+
+.form-test__answer-text {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  font-family: 'DIN Condensed';
+
+  @media (min-width: $desktop) {
+    
+  }
+}
+
+.form-test__button {
+  @include reset-button;
+  padding: 5px 29px;
+  background-color: $pink;
+  color: $white;
+  font-family: 'Bebas Neue';
+  font-size: 16px;
+
+  @media (min-width: $desktop) {
+    padding: 8px 89px;
+    font-size: 36px;
+  }
+}
