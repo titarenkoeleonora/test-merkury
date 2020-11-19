@@ -2,12 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.scss';
 import App from './App';
+import questions from './mocks/questions';
+import answers from './mocks/answers';
 
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App
+      questions={questions}
+      answers={answers}
+    />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,6 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
+import TestQuestion from "./test-question";
+import TestResult from "./test-result";
 
-const Test = () => {
+const Test = (props) => {
+  const {questions} = props;
+  const [step, setStep] = useState(0);
+
+  const question = questions[step];
+
+  const renderTestScreen = () => {
+
+  };
+
   return (
     <section className="test page-content__test">
       <div className="container">
@@ -11,33 +22,19 @@ const Test = () => {
               Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности позволяет оценить значение новых предложений.
             </p>
           </div>
-          <form className="form-test test__form" method="post">
-            <p className="form-test__question">Список покупок – это…</p>
-            <ul className="form-test__answers-list">
-              <li className="form-test__answers-item">
-                <input className="form-test__answer-input checkbox" type="radio" name="question-list" id="question-list-1" value="a"/>
-                <label className="form-test__answer-text" htmlFor="question-list-1">Список чего? У меня все есть.</label>
-              </li>
-              <li className="form-test__answers-item">
-                <input className="form-test__answer-input checkbox" type="radio" name="question-list" id="question-list-2" value="b"/>
-                <label className="form-test__answer-text" htmlFor="question-list-2">Кандалы, которые сковывают порывы моей души. Надо покупать сердцем, а не списком.</label>
-              </li>
-              <li className="form-test__answers-item">
-                <input className="form-test__answer-input checkbox" type="radio" name="question-list" id="question-list-3" value="c"/>
-                <label className="form-test__answer-text" htmlFor="question-list-3">Огонёк маяка, который ведет меня сквозь гастрономический шторм.</label>
-              </li>
-            </ul>
+          <form
+            className="form-test test__form"
+            method="post"
+            onSubmit={(evt) => {
+              evt.preventDefault();
+              setStep(step + 1);
+            }}
+          >
+            <TestQuestion
+              question={question}
+            />
+            <TestResult />
             <button className="form-test__button" type="submit" aria-label="Далее">Далее</button>
-            <div className="test-result form-test__result visually-hidden">
-              <p className="test-result__title">Недовер Недоверыч</p>
-              <p className="test-result__text">
-                Ты знаешь марку самой натуральной колбасы, а также где максимально
-                выгодно ее купить. Твой список покупок всегда наготове, и ты умело им
-                распоряжаешься, не теряя голову при виде акционных товаров. Мудрость и
-                рациональность в продуктовом шопинге – твоя отличительная черта, это очень
-                ценные качества, береги их.
-              </p>
-            </div>
           </form>
         </div>
       </div>

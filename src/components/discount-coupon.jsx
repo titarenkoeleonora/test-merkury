@@ -1,6 +1,7 @@
 import React from "react";
 
-const DiscountCoupon = () => {
+const DiscountCoupon = (props) => {
+
   return (
     <section className="discount-coupon page-content__discount-coupon">
       <div className="container">

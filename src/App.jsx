@@ -4,12 +4,18 @@ import Test from './components/test.jsx';
 import EmailNewsletter from './components/email-newsletter.jsx';
 import Footer from './components/footer.jsx';
 
-function App() {
+
+function App(props) {
+  const {questions} = props;
+  
+
   return (
     <>
     <main>
       <DiscoutCoupon />
-      <Test />
+      <Test
+        questions={questions}
+      />
       <EmailNewsletter />
     </main>
     <Footer />
