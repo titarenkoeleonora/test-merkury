@@ -1,8 +1,37 @@
+.newsletter-form {
+  align-self: flex-start;
+}
+
 .newsletter-form__button {
-  padding: 5px 29px;
+  padding: 5px 20px;
   font-family: 'Bebas Neue';
   font-size: 16px;
   color: $white;
   background-color: $violet;
   border: 0;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    padding: 6px 25px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 6px 46px;
+    font-size: 36px;
+  }
+}
+
+.newsletter-form__input-text {
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet) {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 28px;
+    width: 359px;
+  }
 }

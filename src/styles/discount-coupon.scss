@@ -22,14 +22,15 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  padding: 20px 20px 18px 20px;
+  padding: 40px 20px;
 
   @media (min-width: $tablet) {
-
+    align-items: flex-start;
+    padding: 60px 20px;
   }
 
   @media (min-width: $desktop) {
-
+    padding: 30px 20px 20px 0px;
   }
 }
 
@@ -38,15 +39,15 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  padding: 20px 20px 18px 20px;
+  padding: 20px;
   background-color: $pink;
 
   @media (min-width: $tablet) {
-
+    padding: 43px 20px;
   }
 
   @media (min-width: $desktop) {
-
+    padding: 25px 20px 35px;
   }
 }
 
@@ -55,15 +56,15 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  padding: 20px 20px 18px 20px;
+  padding: 20px;
   background-color: $green;
 
   @media (min-width: $tablet) {
-
+    padding: 31px 20px;
   }
 
   @media (min-width: $desktop) {
-
+    padding: 36px 20px;
   }
 }
 
@@ -72,15 +73,15 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  padding: 20px 20px 18px 20px;
+  padding: 25px 20px;
   background-color: $violet;
 
   @media (min-width: $tablet) {
-
+    padding: 30px 20px;
   }
 
   @media (min-width: $desktop) {
-
+    padding: 21px 20px 43px;
   }
 }
 
@@ -89,22 +90,28 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  padding: 20px 20px 18px 20px;
+  padding: 20px;
   background-color: $orange;
 
   @media (min-width: $tablet) {
     flex-direction: row;
     justify-content: center;
+    padding: 61px 20px;
     width: 768px;
   }
 
   @media (min-width: $desktop) {
+    justify-content: flex-start;
     width: 760px;
   }
 }
 
 .discount-coupon__logo {
   margin-bottom: 18px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 36px;
+  }
 }
 
 .discount-coupon__title {
@@ -113,15 +120,17 @@
   margin-bottom: 12px;
   font-family: 'Marker Felt-Wide';
   font-size: 30px;
-  text-shadow: 1px 2px 0 #421d4b;
+  text-shadow: 1px 2px 0 $violet;
   text-transform: uppercase;
   text-align: center;
 
   @media (min-width: $tablet) {
-
+    font-size: 36px;
+    text-align: left;
   }
 
   @media (min-width: $desktop) {
+    margin-bottom: 22px;
     font-size: 60px;
     text-align: left;
   }
@@ -131,7 +140,7 @@
   font-size: 60px;
 
   @media (min-width: $tablet) {
-    
+    font-size: 66px;
   }
 
   @media (min-width: $desktop) {
@@ -143,24 +152,21 @@
   @include reset-text;
   font-size: 20px;
 
-  @media (min-width: $tablet) {
-
-  }
-
   @media (min-width: $desktop) {
     font-size: 30px;
+    letter-spacing: 0.7px;
   }
 }
 
 .discount-coupon__instruction-text {
   @include reset-text;
   position: relative;
-  width: 200px;
   font-size: 28px;
   text-align: center;
 
   &--give-coupon {
     padding-top: 140px;
+    width: 150px;
 
     &::before {
       content: "";
@@ -168,13 +174,14 @@
       width: 91px;
       height: 70px;
       top: 25px;
-      left: 50px;
+      left: 30px;
       background-image: url('../images/icon-card.png');
     }
   }
 
   &--choose-product {
     padding-top: 140px;
+    width: 170px;
 
     &::before {
       content: "";
@@ -187,9 +194,49 @@
     }
   }
 
+  @media (min-width: $tablet) {
+    font-size: 30px;
+
+    &--give-coupon {
+      width: 160px;
+    }
+
+    &--choose-product {
+      width: 185px;
+    }
+  }
+
   @media (min-width: $desktop) {
     width: 280px;
     font-size: 48px;
+
+    &--give-coupon {
+      padding-top: 120px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 91px;
+        height: 70px;
+        top: 26px;
+        left: 95px;
+        background-image: url('../images/icon-card.png');
+      }
+    }
+
+    &--choose-product {
+      padding-top: 145px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 94px;
+        height: 94px;
+        top: 25px;
+        left: 93px;
+        background-image: url('../images/icon-products.png');
+      }
+    }
   }
 }
 
@@ -205,6 +252,10 @@
 .discount-coupon__footnote-stars {
   font-size: 10px;
   vertical-align: top;
+
+  @media (min-width: $desktop) {
+    font-size: 14px;
+  }
 }
 
 .discount-coupon__sticker {
@@ -217,11 +268,19 @@
   }
 
   @media (min-width: $desktop) {
-    
+
+    &--false {
+      padding-left: 14px;
+    }
+
+    &--true {
+      padding-left: 19px;
+    }
   }
 }
 
 .discount-coupon__sticker-text {
+  @include reset-text;
   width: 141px;
   font-size: 26px;
   
@@ -233,8 +292,40 @@
     text-align: left;
   }
 
+  @media (min-width: $tablet) {
+    font-size: 30px;
+  }
+
   @media (min-width: $desktop) {
-    width: 190px;
+    padding-top: 69px;
+    width: 170px;
     font-size: 36px;
+
+    &--false {
+      margin-right: 9px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.discount-coupon__coupon-image {
+  width: 210px;
+  height: 264px;
+
+  @media (min-width: $tablet) {
+    width: 230px;
+    height: 290px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 243px;
+    height: 304px;
+  }
+}
+
+.discount-coupon__sticker-image {
+  @media (min-width: $desktop) {
+    width: 149px;
+    height: 247px;
   }
 }

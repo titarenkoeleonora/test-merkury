@@ -2,7 +2,7 @@ import React from "react";
 
 const Test = () => {
   return (
-    <section className="test">
+    <section className="test page-content__test">
       <div className="container">
         <div className="test__wrapper">
           <div className="test__text-wrapper">

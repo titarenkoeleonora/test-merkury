@@ -2,7 +2,7 @@ import React from "react";
 
 const EmailNewsletter = () => {
   return (
-    <section className="email-newsletter">
+    <section className="email-newsletter page-content__email-newsletter">
       <div className="container">
         <div className="email-newsletter__wrapper">
           <h2 className="email-newsletter__title">Подписаться на рассылку</h2>

@@ -5,8 +5,6 @@
 .test__wrapper {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
 
   @media (min-width: $tablet) {
     flex-direction: row;
@@ -15,32 +13,51 @@
 
 .test__title {
   @include reset-text;
+  margin-bottom: 10px;
   width: 210px;
   text-align: left;
   font-size: 50px;
   font-family: 'Marker Felt-Wide';
-  text-shadow: 1px 2px 0 #421d4b;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 0$violet;
+
+  @media (min-width: $tablet) {
+    font-size: 55px;
+  }
 
   @media (min-width: $desktop) {
+    margin-bottom: 28px;
     width: 339px;
     font-size: 72px;
+    line-height: 90px;
   }
 }
 
 .test__text-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+
   @media (min-width: $desktop) {
-    margin-right: 41px;
+    padding-left: 0;
+    margin-right: 21px;
   }
 }
 
 .test__text {
   @include reset-text;
-  width: 210px;
+  margin-bottom: 10px;
+  width: 240px;
   text-align: left;
   font-size: 14px;
+
+  @media (min-width: $tablet) {
+    width: 245px;
+    font-size: 16px;
+  }
 
   @media (min-width: $desktop) {
     width: 339px;
     font-size: 24px;
+    line-height: 30px;
   }
 }

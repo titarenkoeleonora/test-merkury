@@ -2,19 +2,51 @@
   flex-grow: 1;
   padding: 20px 20px;
   background-color: $green;
+
+  @media (min-width: $tablet) {
+    padding: 35px 49px;
+  }
 }
 
 .form-test__question {
   @include reset-text;
-  font-size: 16px;
+  margin-bottom: 10px;
+  font-size: 14px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
 
   @media (min-width: $desktop) {
+    margin-bottom: 35px;
     font-size: 36px;
+  }
+}
+
+.form-test__answers-item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 40px;
   }
 }
 
 .form-test__answers-list {
   @include reset-list;
+  margin-bottom: 15px;
   font-size: 10px;
 
   @media (min-width: $desktop) {
@@ -29,18 +61,30 @@
   padding-left: 15px;
   font-family: 'DIN Condensed';
 
+  @media (min-width: $tablet) {
+    padding-left: 25px;
+    font-size: 14px;
+  }
+
   @media (min-width: $desktop) {
-    
+    padding-left: 51px;
+    font-size: 18px;
   }
 }
 
 .form-test__button {
   @include reset-button;
-  padding: 5px 29px;
+  padding: 5px 39px;
   background-color: $pink;
   color: $white;
   font-family: 'Bebas Neue';
   font-size: 16px;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    padding: 6px 44px;
+    font-size: 18px;
+  }
 
   @media (min-width: $desktop) {
     padding: 8px 89px;
