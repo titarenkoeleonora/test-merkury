@@ -9,7 +9,19 @@ const Test = (props) => {
   const question = questions[step];
 
   const renderTestScreen = () => {
+    if (step >= questions.length) {
+      return (
+        <TestResult />
+      );
+    }
 
+    if (question) {
+      return (
+        <TestQuestion
+          question={question}
+        />
+      );
+    }
   };
 
   return (
@@ -30,11 +42,7 @@ const Test = (props) => {
               setStep(step + 1);
             }}
           >
-            <TestQuestion
-              question={question}
-            />
-            <TestResult />
-            <button className="form-test__button" type="submit" aria-label="Далее">Далее</button>
+            {renderTestScreen()}
           </form>
         </div>
       </div>

@@ -15,6 +15,7 @@ const TestQuestion = (props) => {
           </li>
         ))}
       </ul>
+      <button className="form-test__button" type="submit" aria-label="Далее">Далее</button>
     </div>
   );
 };

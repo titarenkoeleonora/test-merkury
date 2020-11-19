@@ -2,7 +2,7 @@ import React from "react";
 
 const TestResult = (props) => {
   return (
-    <div className="test-result form-test__result visually-hidden">
+    <div className="test-result form-test__result">
       <p className="test-result__title">Недовер Недоверыч</p>
         <p className="test-result__text">
           Ты знаешь марку самой натуральной колбасы, а также где максимально
