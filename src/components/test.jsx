@@ -5,11 +5,43 @@ import TestResult from "./test-result";
 const Test = (props) => {
   const {questions} = props;
   const [step, setStep] = useState(0);
-
   const question = questions[step];
+
+  const [answers, setAnswers] = useState([]);
+
+  console.log(answers);
+
+  const getAnswers = () => {
+    const inputs = document.querySelectorAll("input[type=radio]");
+    
+    inputs.forEach((input) => {
+      if (input.checked) {
+        setAnswers([...answers, input.value]);
+      }
+    });
+  };
 
   const renderTestScreen = () => {
     if (step >= questions.length) {
+      let counter = {};
+
+      answers.forEach(val => {
+        if (val in counter) {
+          counter[val] += 1;
+        } else {
+          counter[val] = 1;
+        }
+      });
+
+      // let max = Object.entries(counter).reduce((max, n) => n[1] > max[1] ? n : max);
+      var max = Object.entries(counter).reduce((prev, cur) => {
+        if (prev.b > cur.b) {
+          return prev
+        }
+        return cur
+      })
+      console.log(max[0]);
+      
       return (
         <TestResult />
       );
@@ -40,6 +72,7 @@ const Test = (props) => {
             onSubmit={(evt) => {
               evt.preventDefault();
               setStep(step + 1);
+              getAnswers();
             }}
           >
             {renderTestScreen()}
