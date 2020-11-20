@@ -3,13 +3,10 @@ import TestQuestion from "./test-question";
 import TestResult from "./test-result";
 
 const Test = (props) => {
-  const {questions} = props;
+  const {questions, testResults} = props;
   const [step, setStep] = useState(0);
-  const question = questions[step];
-
   const [answers, setAnswers] = useState([]);
-
-  console.log(answers);
+  const question = questions[step];
 
   const getAnswers = () => {
     const inputs = document.querySelectorAll("input[type=radio]");
@@ -23,27 +20,25 @@ const Test = (props) => {
 
   const renderTestScreen = () => {
     if (step >= questions.length) {
-      let counter = {};
 
-      answers.forEach(val => {
-        if (val in counter) {
-          counter[val] += 1;
-        } else {
-          counter[val] = 1;
-        }
-      });
-
-      // let max = Object.entries(counter).reduce((max, n) => n[1] > max[1] ? n : max);
+      let counter = answers.reduce((acc, item) => {
+        acc[item] = (acc[item] || 0) + 1 ;
+        return acc;
+      }, {});
+      
       var max = Object.entries(counter).reduce((prev, cur) => {
         if (prev.b > cur.b) {
-          return prev
+          return cur
         }
-        return cur
+        return prev
       })
-      console.log(max[0]);
+
+      const result = testResults.find(item => item.id === max[0]);
       
       return (
-        <TestResult />
+        <TestResult
+          result={result}
+        />
       );
     }
 

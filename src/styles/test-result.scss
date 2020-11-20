@@ -1,0 +1,23 @@
+.test-result__title {
+  font-size: 14px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 30px;
+  }
+}
+
+.test-result__text {
+  font-size: 12px;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 24px;
+  }
+}

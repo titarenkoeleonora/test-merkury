@@ -6,15 +6,15 @@ import Footer from './components/footer.jsx';
 
 
 function App(props) {
-  const {questions} = props;
+  const {questions, testResults} = props;
   
-
   return (
     <>
     <main>
       <DiscoutCoupon />
       <Test
         questions={questions}
+        testResults={testResults}
       />
       <EmailNewsletter />
     </main>

@@ -1,16 +1,22 @@
 .input-text {
   padding: 9px;
+  width: 280px;
   background-color: transparent;
   border: 1px solid $white;
   color: $white;
+  font-family: 'DIN Condensed';
 
   &::placeholder {
     color: $white;
-    font-family: 'DIN Condensed';
+  }
+
+  @media (min-width: $tablet) {
+    width: 260px;
   }
 
   @media (min-width: $desktop) {
     padding: 13px 20px 15px;
+    width: 360px;
     font-size: 24px;
   }
 }

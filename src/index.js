@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './styles/index.scss';
 import App from './App';
 import questions from './mocks/questions';
-import answers from './mocks/answers';
+import testResults from './mocks/test-results';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -11,7 +11,7 @@ ReactDOM.render(
   <React.StrictMode>
     <App
       questions={questions}
-      answers={answers}
+      testResults={testResults}
     />
   </React.StrictMode>,
   document.getElementById('root')
