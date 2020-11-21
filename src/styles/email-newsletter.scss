@@ -1,4 +1,6 @@
 .email-newsletter__wrapper {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
