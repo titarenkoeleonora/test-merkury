@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Correctly DiscountCoupon render 1`] = `
+<section
+  className="discount-coupon"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="discount-coupon__wrapper"
+    >
+      <div
+        className="discount-coupon__wrapper-title"
+      >
+        <img
+          alt="Логотип Дикси"
+          className="logo discount-coupon__logo"
+          height="55"
+          src="../images/logo_dixy.png"
+          width="198"
+        />
+        <p
+          className="discount-coupon__title"
+        >
+          Залепись 
+          <span
+            className="discount-coupon__price"
+          >
+            цена
+          </span>
+        </p>
+        <p
+          className="discount-coupon__dates"
+        >
+          с 17 февраля по 8 марта 2020 г.
+        </p>
+      </div>
+      <div
+        className="discount-coupon__wrapper-give-coupon"
+      >
+        <p
+          className="discount-coupon__instruction-text discount-coupon__instruction-text--give-coupon"
+        >
+          Получите на кассе купон со скидками
+          <span
+            className="discount-coupon__footnote-stars"
+          >
+            **
+          </span>
+        </p>
+        <p
+          className="discount-coupon__footnote"
+        >
+          При покупке от 700 руб.
+          <span
+            className="discount-coupon__footnote-stars"
+          >
+            *
+          </span>
+        </p>
+      </div>
+      <div
+        className="discount-coupon__wrapper-coupon-image"
+      >
+        <img
+          alt="Купон со скидками"
+          className="discount-coupon__coupon-image"
+          height="264"
+          src="../images/discount-coupon.png"
+          width="210"
+        />
+      </div>
+      <div
+        className="discount-coupon__wrapper-choose-product"
+      >
+        <p
+          className="discount-coupon__instruction-text discount-coupon__instruction-text--choose-product"
+        >
+          Выберите товар
+          <span
+            className="discount-coupon__footnote-stars"
+          >
+            ***
+          </span>
+           и наклейте скидку
+        </p>
+      </div>
+      <div
+        className="discount-coupon__wrapper-sticker-instruction"
+      >
+        <div
+          className="discount-coupon__sticker discount-coupon__sticker--false"
+        >
+          <p
+            className="discount-coupon__sticker-text discount-coupon__sticker-text--false"
+          >
+            Наклейка перекрывает штрих-код на упаковке
+          </p>
+          <img
+            alt="Наклейка не должна перекрывать штрих-код"
+            className="discount-coupon__sticker-image discount-coupon__sticker-image--false"
+            height="230"
+            src="../images/sticker-false.png"
+            width="130"
+          />
+        </div>
+        <div
+          className="discount-coupon__sticker discount-coupon__sticker--true"
+        >
+          <img
+            alt="Наклейка не должна перекрывать штрих-код"
+            className="discount-coupon__sticker-image discount-coupon__sticker-image--true"
+            height="230"
+            src="../images/sticker-true.png"
+            width="130"
+          />
+          <p
+            className="discount-coupon__sticker-text discount-coupon__sticker-text--true"
+          >
+            Наклейка не перекрывает штрих-код на упаковке
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

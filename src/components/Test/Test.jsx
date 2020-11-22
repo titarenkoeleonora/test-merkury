@@ -12,19 +12,12 @@ const Test = (props) => {
   const getAnswers = () => {
     const formTest = document.querySelector('.form-test');
     const radioButtons = formTest.querySelectorAll('input[type=radio]');
-    let isWithAnswer = false;
     
     radioButtons.forEach((input) => {
       if (input.checked) {
-        isWithAnswer = true;
         setAnswers([...answers, input.value]);
       }
     });
-
-    if (!isWithAnswer) {
-      console.log('aaaaaaaaaaaa');
-      return;
-    }
   };
 
   const getMaxAnswer = () => {
@@ -60,7 +53,7 @@ const Test = (props) => {
           question={question}
         />
       );
-    }
+    };
   };
 
   const submitHandler = (evt) => {

@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Correctly Test render 1`] = `
+<section
+  className="test"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="test__wrapper"
+    >
+      <div
+        className="test__text-wrapper"
+      >
+        <h2
+          className="test__title"
+        >
+          Пройди тест
+        </h2>
+        <p
+          className="test__text"
+        >
+          Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности позволяет оценить значение новых предложений.
+        </p>
+      </div>
+      <form
+        className="form-test test__form"
+        method="post"
+        onSubmit={[Function]}
+      >
+        <div>
+          <p
+            className="form-test__question"
+          >
+            СПИСОК ПОКУПОК – ЭТО…
+          </p>
+          <ul
+            className="form-test__answers-list"
+          >
+            <li
+              className="form-test__answers-item"
+            >
+              <input
+                className="form-test__answer-input checkbox visually-hidden"
+                id="question-list-0"
+                name="question-list"
+                type="radio"
+                value="a"
+              />
+              <label
+                className="form-test__answer-text"
+                htmlFor="question-list-0"
+              >
+                Список чего? У меня все есть.
+              </label>
+            </li>
+            <li
+              className="form-test__answers-item"
+            >
+              <input
+                className="form-test__answer-input checkbox visually-hidden"
+                id="question-list-1"
+                name="question-list"
+                type="radio"
+                value="b"
+              />
+              <label
+                className="form-test__answer-text"
+                htmlFor="question-list-1"
+              >
+                Кандалы, которые сковывают порывы моей души. Надо покупать сердцем, а не списком.
+              </label>
+            </li>
+            <li
+              className="form-test__answers-item"
+            >
+              <input
+                className="form-test__answer-input checkbox visually-hidden"
+                id="question-list-2"
+                name="question-list"
+                type="radio"
+                value="c"
+              />
+              <label
+                className="form-test__answer-text"
+                htmlFor="question-list-2"
+              >
+                Огонёк маяка, который ведет меня сквозь гастрономический шторм.
+              </label>
+            </li>
+          </ul>
+          <button
+            aria-label="Далее"
+            className="form-test__button"
+            type="submit"
+          >
+            Далее
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+`;

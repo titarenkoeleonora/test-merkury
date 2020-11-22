@@ -2,7 +2,7 @@
   position: absolute;
 }
 
-.checkbox+.form-test__answer-text::before {
+.checkbox + .form-test__answer-text::before {
   content: '';
   position: absolute;
   display: block;
@@ -25,16 +25,16 @@
   }
 }
 
-.checkbox+.form-test__answer-text:hover::before,
+.checkbox + .form-test__answer-text:hover::before,
 .checkbox:focus+.form-test__answer-text::before {
   border-color: $white;
 }
 
-.checkbox+.form-test__answer-text:active::before {
+.checkbox + .form-test__answer-text:active::before {
   border-color: $white;
 }
 
-.checkbox:checked+.form-test__answer-text::before {
+.checkbox:checked + .form-test__answer-text::before {
   content: '';
   position: absolute;
   display: block;

@@ -1,0 +1,317 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render App 1`] = `
+Array [
+  <main>
+    <section
+      className="discount-coupon"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="discount-coupon__wrapper"
+        >
+          <div
+            className="discount-coupon__wrapper-title"
+          >
+            <img
+              alt="Логотип Дикси"
+              className="logo discount-coupon__logo"
+              height="55"
+              src="../images/logo_dixy.png"
+              width="198"
+            />
+            <p
+              className="discount-coupon__title"
+            >
+              Залепись 
+              <span
+                className="discount-coupon__price"
+              >
+                цена
+              </span>
+            </p>
+            <p
+              className="discount-coupon__dates"
+            >
+              с 17 февраля по 8 марта 2020 г.
+            </p>
+          </div>
+          <div
+            className="discount-coupon__wrapper-give-coupon"
+          >
+            <p
+              className="discount-coupon__instruction-text discount-coupon__instruction-text--give-coupon"
+            >
+              Получите на кассе купон со скидками
+              <span
+                className="discount-coupon__footnote-stars"
+              >
+                **
+              </span>
+            </p>
+            <p
+              className="discount-coupon__footnote"
+            >
+              При покупке от 700 руб.
+              <span
+                className="discount-coupon__footnote-stars"
+              >
+                *
+              </span>
+            </p>
+          </div>
+          <div
+            className="discount-coupon__wrapper-coupon-image"
+          >
+            <img
+              alt="Купон со скидками"
+              className="discount-coupon__coupon-image"
+              height="264"
+              src="../images/discount-coupon.png"
+              width="210"
+            />
+          </div>
+          <div
+            className="discount-coupon__wrapper-choose-product"
+          >
+            <p
+              className="discount-coupon__instruction-text discount-coupon__instruction-text--choose-product"
+            >
+              Выберите товар
+              <span
+                className="discount-coupon__footnote-stars"
+              >
+                ***
+              </span>
+               и наклейте скидку
+            </p>
+          </div>
+          <div
+            className="discount-coupon__wrapper-sticker-instruction"
+          >
+            <div
+              className="discount-coupon__sticker discount-coupon__sticker--false"
+            >
+              <p
+                className="discount-coupon__sticker-text discount-coupon__sticker-text--false"
+              >
+                Наклейка перекрывает штрих-код на упаковке
+              </p>
+              <img
+                alt="Наклейка не должна перекрывать штрих-код"
+                className="discount-coupon__sticker-image discount-coupon__sticker-image--false"
+                height="230"
+                src="../images/sticker-false.png"
+                width="130"
+              />
+            </div>
+            <div
+              className="discount-coupon__sticker discount-coupon__sticker--true"
+            >
+              <img
+                alt="Наклейка не должна перекрывать штрих-код"
+                className="discount-coupon__sticker-image discount-coupon__sticker-image--true"
+                height="230"
+                src="../images/sticker-true.png"
+                width="130"
+              />
+              <p
+                className="discount-coupon__sticker-text discount-coupon__sticker-text--true"
+              >
+                Наклейка не перекрывает штрих-код на упаковке
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      className="test"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="test__wrapper"
+        >
+          <div
+            className="test__text-wrapper"
+          >
+            <h2
+              className="test__title"
+            >
+              Пройди тест
+            </h2>
+            <p
+              className="test__text"
+            >
+              Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности позволяет оценить значение новых предложений.
+            </p>
+          </div>
+          <form
+            className="form-test test__form"
+            method="post"
+            onSubmit={[Function]}
+          >
+            <div>
+              <p
+                className="form-test__question"
+              >
+                СПИСОК ПОКУПОК – ЭТО…
+              </p>
+              <ul
+                className="form-test__answers-list"
+              >
+                <li
+                  className="form-test__answers-item"
+                >
+                  <input
+                    className="form-test__answer-input checkbox visually-hidden"
+                    id="question-list-0"
+                    name="question-list"
+                    type="radio"
+                    value="a"
+                  />
+                  <label
+                    className="form-test__answer-text"
+                    htmlFor="question-list-0"
+                  >
+                    Список чего? У меня все есть.
+                  </label>
+                </li>
+                <li
+                  className="form-test__answers-item"
+                >
+                  <input
+                    className="form-test__answer-input checkbox visually-hidden"
+                    id="question-list-1"
+                    name="question-list"
+                    type="radio"
+                    value="b"
+                  />
+                  <label
+                    className="form-test__answer-text"
+                    htmlFor="question-list-1"
+                  >
+                    Кандалы, которые сковывают порывы моей души. Надо покупать сердцем, а не списком.
+                  </label>
+                </li>
+                <li
+                  className="form-test__answers-item"
+                >
+                  <input
+                    className="form-test__answer-input checkbox visually-hidden"
+                    id="question-list-2"
+                    name="question-list"
+                    type="radio"
+                    value="c"
+                  />
+                  <label
+                    className="form-test__answer-text"
+                    htmlFor="question-list-2"
+                  >
+                    Огонёк маяка, который ведет меня сквозь гастрономический шторм.
+                  </label>
+                </li>
+              </ul>
+              <button
+                aria-label="Далее"
+                className="form-test__button"
+                type="submit"
+              >
+                Далее
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section
+      className="email-newsletter"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="email-newsletter__wrapper"
+        >
+          <h2
+            className="email-newsletter__title"
+          >
+            Подписаться на рассылку
+          </h2>
+          <p
+            className="email-newsletter__text"
+          >
+            Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности позволяет оценить значение новых предложений.
+          </p>
+          <form
+            className="newsletter-form email-newsletter__form"
+            method="post"
+          >
+            <input
+              className="newsletter-form__input-text input-text"
+              name="name"
+              placeholder="Имя"
+              required={true}
+              type="text"
+            />
+            <input
+              className="newsletter-form__input-text input-text"
+              name="email"
+              placeholder="E-mail"
+              required={true}
+              type="email"
+            />
+            <button
+              aria-label="Подписаться"
+              className="newsletter-form__button"
+              type="submit"
+            >
+              Подписаться
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>,
+  <footer
+    className="footer"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="footer__wrapper"
+      >
+        <p
+          className="footer__action-dates-text"
+        >
+          Выдача и использование купонов:
+          <span
+            className="footer__action-dates"
+          >
+            17.02 – 08.03.2020
+          </span>
+        </p>
+        <div
+          className="footer__action-terms"
+        >
+          <div
+            className="footer__action-terms-title"
+          >
+            Условия проведения акции:
+          </div>
+          <p
+            className="footer__action-terms-text"
+          >
+            Совершите покупку на сумму от 700 руб.* в период с 17.02.2020 г. по 08.03.2020 г. и получите на кассе купон с наклейками-скидками** на последующие покупки в магазинах «ДИКСИ». Выбирайте товар*** и наклеивайте скидку**. *700 руб. без учета табачной продукции (табак, табачные изделия и курительные принадлежности, в том числе трубки, кальяны, сигаретная бумага, зажигалки) и алкогольной продукции с установленной минимальной розничной ценой. Сумма покупки рассчитывается после применения всех скидок. ** Скидка предоставляется на последующую покупку товаров***, кроме табачной продукции (табак, табачные изделия и курительные принадлежности, в том числе трубки, кальяны, сигаретная бумага, зажигалки) и алкогольной продукции с установленной минимальной розничной ценой. Скидка предоставляется в размере, указанном на наклейке, и распространяется только на тот товар***, на который она наклеена, и рассчитывается от цены, действующей в магазине на момент приобретения товара***. Скидка не суммируется и не распространяется на действующие скидки/акции. *** В акции не участвуют следующие товары: товары со скидками, акционные товары, табачная продукция (табак, табачные изделия и курительные принадлежности, в том числе трубки, кальяны, сигаретная бумага, зажигалки) и алкогольная продукция с установленной минимальной розничной ценой. Скидка, наклеенная на такой товар, не применяется и сгорает, восстановлению не подлежит. В случае утери купона наклейки-скидки не восстанавливаются. Количество купонов ограничено. Информацию об организаторе акции, правилах ее проведения, количестве купонов с наклейками-скидками, о виде/типе скидок, сроках, месте и порядке их получения, об установленных ограничениях можно узнать по телефону: 8 (800) 333-02-01, а также в торговых залах магазинов «ДИКСИ» и на сайте www.dixy.ru в период проведения акции.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>,
+]
+`;

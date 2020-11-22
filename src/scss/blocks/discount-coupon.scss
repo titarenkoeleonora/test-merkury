@@ -263,9 +263,7 @@
   flex-direction: row;
   flex-wrap: wrap;
 
-  @media (min-width: $tablet) {
-
-  }
+  @media (min-width: $tablet) {}
 
   @media (min-width: $desktop) {
 
@@ -283,7 +281,7 @@
   @include reset-text;
   width: 141px;
   font-size: 26px;
-  
+
   &--false {
     text-align: right;
   }
