@@ -1,13 +1,12 @@
-import React from "react";
+import React from 'react';
 
-const DiscountCoupon = (props) => {
-
+const DiscountCoupon = () => {
   return (
-    <section className="discount-coupon page-content__discount-coupon">
+    <section className="discount-coupon">
       <div className="container">
         <div className="discount-coupon__wrapper">
           <div className="discount-coupon__wrapper-title">
-            <img className="logo discount-coupon__logo" src="../images/logo_dixy.png" alt="Дикси" width="198" height="55" />
+            <img className="logo discount-coupon__logo" src="../images/logo_dixy.png" alt="Логотип Дикси" width="198" height="55" />
             <p className="discount-coupon__title">
               Залепись <span className="discount-coupon__price">цена</span>
             </p>
@@ -17,7 +16,7 @@ const DiscountCoupon = (props) => {
           </div>
           <div className="discount-coupon__wrapper-give-coupon">
             <p className="discount-coupon__instruction-text discount-coupon__instruction-text--give-coupon">
-              Получите <br />на кассе купон со скидками<span className="discount-coupon__footnote-stars">**</span>
+              Получите на&nbsp;кассе купон со скидками<span className="discount-coupon__footnote-stars">**</span>
             </p>
             <p className="discount-coupon__footnote">
               При покупке от 700 руб.<span className="discount-coupon__footnote-stars">*</span>

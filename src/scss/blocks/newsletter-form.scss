@@ -1,9 +1,17 @@
 .newsletter-form {
+  display: flex;
+  flex-direction: column;
   align-self: flex-start;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .newsletter-form__button {
   padding: 5px 20px;
+  width: max-content;
   font-family: 'Bebas Neue';
   font-size: 16px;
   color: $white;

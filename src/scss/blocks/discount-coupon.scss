@@ -169,13 +169,13 @@
     width: 150px;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       width: 91px;
       height: 70px;
       top: 25px;
       left: 30px;
-      background-image: url('../images/icon-card.png');
+      background-image: url('../../images/icon-card.png');
     }
   }
 
@@ -184,13 +184,13 @@
     width: 170px;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       width: 94px;
       height: 94px;
       top: 25px;
       left: 50px;
-      background-image: url('../images/icon-products.png');
+      background-image: url('../../images/icon-products.png');
     }
   }
 
@@ -214,13 +214,13 @@
       padding-top: 120px;
 
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         width: 91px;
         height: 70px;
         top: 26px;
         left: 95px;
-        background-image: url('../images/icon-card.png');
+        background-image: url('../../images/icon-card.png');
       }
     }
 
@@ -228,13 +228,13 @@
       padding-top: 145px;
 
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         width: 94px;
         height: 94px;
         top: 25px;
         left: 93px;
-        background-image: url('../images/icon-products.png');
+        background-image: url('../../images/icon-products.png');
       }
     }
   }

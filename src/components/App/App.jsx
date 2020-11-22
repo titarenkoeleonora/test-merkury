@@ -1,8 +1,8 @@
-import React from "react";
-import DiscoutCoupon from './components/discount-coupon.jsx';
-import Test from './components/test.jsx';
-import EmailNewsletter from './components/email-newsletter.jsx';
-import Footer from './components/footer.jsx';
+import React from 'react';
+import DiscoutCoupon from '../DiscountCoupon/DiscountCoupon.jsx';
+import Test from '../Test/Test.jsx';
+import EmailNewsletter from '../EmailNewsletter/EmailNewsletter.jsx';
+import Footer from '../Footer/Footer.jsx';
 
 
 function App(props) {

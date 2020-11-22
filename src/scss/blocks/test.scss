@@ -1,5 +1,10 @@
 .test {
+  padding-top: 20px;
   color: $white;
+
+  @media (min-width: $desktop) {
+    padding-top: 91px;
+  }
 }
 
 .test__wrapper {

@@ -1,3 +1,11 @@
+.email-newsletter {
+  padding-top: 20px;
+
+  @media (min-width: $desktop) {
+    padding-top: 95px;
+  }
+}
+
 .email-newsletter__wrapper {
   position: relative;
   z-index: 2;
@@ -25,7 +33,7 @@
   text-transform: uppercase;
   text-shadow: 1px 2px 0 #421d4b;
 
-  
+
   @media (min-width: $tablet) {
     font-size: 40px;
   }

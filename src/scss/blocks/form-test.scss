@@ -29,16 +29,8 @@
 .form-test__answers-item {
   margin-bottom: 10px;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   @media (min-width: $tablet) {
     margin-bottom: 15px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 
   @media (min-width: $desktop) {

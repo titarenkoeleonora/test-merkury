@@ -1,3 +1,9 @@
+.footer {
+  @media (min-width: $desktop) {
+    padding-top: 45px;
+  }
+}
+
 .footer__wrapper {
   padding: 20px;
 }
