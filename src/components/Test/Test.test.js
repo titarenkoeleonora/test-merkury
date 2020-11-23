@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 
 const testQuestions = [
   {
-    id: '00',
+    id: '01',
     title: 'СПИСОК ПОКУПОК – ЭТО…',
     answers: [{
       answer: 'Список чего? У меня все есть.',
@@ -19,7 +19,7 @@ const testQuestions = [
     }],
   }, 
   {
-    id: '00',
+    id: '02',
     title: 'ПОЛЬЗУЕШЬСЯ ЛИ ТЫ СКИДОЧНЫМИ КУПОНАМИ?',
     answers: [
       {

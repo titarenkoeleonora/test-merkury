@@ -169,14 +169,15 @@ Array [
                 >
                   <input
                     className="form-test__answer-input checkbox visually-hidden"
-                    id="question-list-0"
+                    id="010"
                     name="question-list"
+                    required={true}
                     type="radio"
                     value="a"
                   />
                   <label
                     className="form-test__answer-text"
-                    htmlFor="question-list-0"
+                    htmlFor="010"
                   >
                     Список чего? У меня все есть.
                   </label>
@@ -186,14 +187,15 @@ Array [
                 >
                   <input
                     className="form-test__answer-input checkbox visually-hidden"
-                    id="question-list-1"
+                    id="011"
                     name="question-list"
+                    required={true}
                     type="radio"
                     value="b"
                   />
                   <label
                     className="form-test__answer-text"
-                    htmlFor="question-list-1"
+                    htmlFor="011"
                   >
                     Кандалы, которые сковывают порывы моей души. Надо покупать сердцем, а не списком.
                   </label>
@@ -203,14 +205,15 @@ Array [
                 >
                   <input
                     className="form-test__answer-input checkbox visually-hidden"
-                    id="question-list-2"
+                    id="012"
                     name="question-list"
+                    required={true}
                     type="radio"
                     value="c"
                   />
                   <label
                     className="form-test__answer-text"
-                    htmlFor="question-list-2"
+                    htmlFor="012"
                   >
                     Огонёк маяка, который ведет меня сквозь гастрономический шторм.
                   </label>

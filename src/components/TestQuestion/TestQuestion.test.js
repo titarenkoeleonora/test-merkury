@@ -2,7 +2,7 @@ import TestQuestion from './TestQuestion';
 import renderer from 'react-test-renderer';
 
 const testQuestion = {
-  id: '00',
+  id: '01',
   title: 'СПИСОК ПОКУПОК – ЭТО…',
   answers: [{
     answer: 'Список чего? У меня все есть.',
