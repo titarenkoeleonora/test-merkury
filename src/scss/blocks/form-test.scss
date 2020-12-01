@@ -75,6 +75,11 @@
   font-size: 16px;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
   @media (min-width: $tablet) {
     padding: 6px 44px;
     font-size: 18px;

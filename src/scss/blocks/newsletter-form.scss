@@ -19,6 +19,11 @@
   border: 0;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
   @media (min-width: $tablet) {
     padding: 6px 25px;
     font-size: 18px;
